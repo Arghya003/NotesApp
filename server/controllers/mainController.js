@@ -16,5 +16,9 @@ exports.about=async(req,res)=>{
         title:'about page',
         description:"welcome to about"
     }
-    res.render('about',locals)
+    res.render('about',{
+      locals,
+      layout : '../views/layouts/front-page'
+      
+    })
 }
